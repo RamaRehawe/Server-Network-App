@@ -32,6 +32,7 @@ namespace Server_Network_App
         {
             InitializeComponent();
             _client_list = new List<TcpClient>();
+            _client_count = 0;
             _connectedClientsTextBox.Text = "0";
             _startServerButton.Enabled = true;
             _stopServerButton.Enabled = false;
@@ -45,6 +46,8 @@ namespace Server_Network_App
 
         private void StartServerButtonHandler(object sender, EventArgs e)
         {
+            _client_count = 0;
+            _connectedClientsTextBox.Text = _client_count.ToString();
             try
             {
                 if(!Int32.TryParse(_portTextBox.Text, out _port))
@@ -74,15 +77,17 @@ namespace Server_Network_App
             _keep_going = false;
             _statusTextBox.Text = string.Empty;
             _statusTextBox.Text = "Shuting down server, disconnectiong all clients...";
+            _client_count = 0;
+            _connectedClientsTextBox.InvokeEx(cctb => cctb.Text = _client_count.ToString());
 
             try
             {
                 foreach(TcpClient client in _client_list)
                 {
                     client.Close();
+                    
                 }
-                _client_count = 0;
-                _connectedClientsTextBox.Text = "0";
+                
                 _client_list.Clear();
                 _listener.Stop();
 
@@ -92,7 +97,6 @@ namespace Server_Network_App
                 _statusTextBox.Text += CRLF + "Problem stopping the serverserver, or client connections forcibly closed...";
                 _statusTextBox.Text+= CRLF + ex.ToString();
             }
-
             _startServerButton.Enabled = true;
             _stopServerButton.Enabled = false;
             _sendCommandButton.Enabled = false;
@@ -111,6 +115,7 @@ namespace Server_Network_App
                     writer.Flush();
                     
                 }
+                //_statusTextBox.Text += CRLF + "Command Sent from Server: " + _clientCommandTextBox.Text;
                 _clientCommandTextBox.Text = string.Empty;
 
 
