@@ -16,5 +16,21 @@ namespace Server_Network_App
         {
             InitializeComponent();
         }
+        #region Event Handlers
+
+        private void StartServerButtonHandler(object sender, EventArgs e)
+        {
+
+        }
+        private void StopServerButtonHandler(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SendCommandButtonHandler(object sender, EventArgs e)
+        {
+
+        }
+        #endregion Event Handlers
     }
 }
