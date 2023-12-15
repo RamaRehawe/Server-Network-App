@@ -1,6 +1,6 @@
 ﻿namespace Server_Network_App
 {
-    partial class Form1
+    partial class _winFormServer
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@
             this._connectedClientsTextBox = new System.Windows.Forms.TextBox();
             this._sendCommandButton = new System.Windows.Forms.Button();
             this._clientCommandTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this._statusTextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -52,7 +52,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.05714F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this._statusTextBox, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -87,16 +87,16 @@
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.09091F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.90909F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(322, 213);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // _startServerButton
             // 
             this._startServerButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._startServerButton.Location = new System.Drawing.Point(164, 148);
+            this._startServerButton.Location = new System.Drawing.Point(164, 173);
             this._startServerButton.Name = "_startServerButton";
-            this._startServerButton.Size = new System.Drawing.Size(155, 62);
+            this._startServerButton.Size = new System.Drawing.Size(155, 37);
             this._startServerButton.TabIndex = 0;
             this._startServerButton.Text = "Start Server";
             this._startServerButton.UseVisualStyleBackColor = true;
@@ -105,9 +105,9 @@
             // _stopServerButton
             // 
             this._stopServerButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._stopServerButton.Location = new System.Drawing.Point(3, 148);
+            this._stopServerButton.Location = new System.Drawing.Point(3, 173);
             this._stopServerButton.Name = "_stopServerButton";
-            this._stopServerButton.Size = new System.Drawing.Size(155, 62);
+            this._stopServerButton.Size = new System.Drawing.Size(155, 37);
             this._stopServerButton.TabIndex = 1;
             this._stopServerButton.Text = "Stop Server";
             this._stopServerButton.UseVisualStyleBackColor = true;
@@ -117,9 +117,9 @@
             // 
             this._portLabel.AutoSize = true;
             this._portLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._portLabel.Location = new System.Drawing.Point(3, 122);
+            this._portLabel.Location = new System.Drawing.Point(3, 143);
             this._portLabel.Name = "_portLabel";
-            this._portLabel.Size = new System.Drawing.Size(155, 23);
+            this._portLabel.Size = new System.Drawing.Size(155, 27);
             this._portLabel.TabIndex = 2;
             this._portLabel.Text = "Listen on Port";
             this._portLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -127,7 +127,7 @@
             // _portTextBox
             // 
             this._portTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._portTextBox.Location = new System.Drawing.Point(164, 125);
+            this._portTextBox.Location = new System.Drawing.Point(164, 146);
             this._portTextBox.Name = "_portTextBox";
             this._portTextBox.Size = new System.Drawing.Size(155, 24);
             this._portTextBox.TabIndex = 3;
@@ -197,26 +197,26 @@
             this._clientCommandTextBox.Size = new System.Drawing.Size(316, 89);
             this._clientCommandTextBox.TabIndex = 3;
             // 
-            // textBox1
+            // _statusTextBox
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 3);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.tableLayoutPanel1.SetRowSpan(this.textBox1, 2);
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(526, 432);
-            this.textBox1.TabIndex = 2;
+            this._statusTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._statusTextBox.Location = new System.Drawing.Point(3, 3);
+            this._statusTextBox.Multiline = true;
+            this._statusTextBox.Name = "_statusTextBox";
+            this._statusTextBox.ReadOnly = true;
+            this.tableLayoutPanel1.SetRowSpan(this._statusTextBox, 2);
+            this._statusTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this._statusTextBox.Size = new System.Drawing.Size(526, 432);
+            this._statusTextBox.TabIndex = 2;
             // 
-            // Form1
+            // _winFormServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 438);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "_winFormServer";
+            this.Text = "WinForm Server";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -232,7 +232,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox _statusTextBox;
         private System.Windows.Forms.Label _connectedClientsLabel;
         private System.Windows.Forms.TextBox _connectedClientsTextBox;
         private System.Windows.Forms.Button _sendCommandButton;

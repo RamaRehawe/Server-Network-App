@@ -2,9 +2,9 @@ C:\Server-Network-App\Server-Network-App\bin\Debug\Server-Network-App.exe.config
 C:\Server-Network-App\Server-Network-App\bin\Debug\Server-Network-App.exe
 C:\Server-Network-App\Server-Network-App\bin\Debug\Server-Network-App.pdb
 C:\Server-Network-App\Server-Network-App\obj\Debug\Server-Network-App.csproj.AssemblyReference.cache
-C:\Server-Network-App\Server-Network-App\obj\Debug\Server_Network_App.Form1.resources
 C:\Server-Network-App\Server-Network-App\obj\Debug\Server_Network_App.Properties.Resources.resources
 C:\Server-Network-App\Server-Network-App\obj\Debug\Server-Network-App.csproj.GenerateResource.cache
 C:\Server-Network-App\Server-Network-App\obj\Debug\Server-Network-App.csproj.CoreCompileInputs.cache
 C:\Server-Network-App\Server-Network-App\obj\Debug\Server-Network-App.exe
 C:\Server-Network-App\Server-Network-App\obj\Debug\Server-Network-App.pdb
+C:\Server-Network-App\Server-Network-App\obj\Debug\Server_Network_App._winFormServer.resources
