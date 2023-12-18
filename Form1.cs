@@ -77,7 +77,7 @@ namespace Server_Network_App
             _keep_going = false;
             _statusTextBox.Text = string.Empty;
             _statusTextBox.Text = "Shuting down server, disconnectiong all clients...";
-            _client_count = 0;
+            //_client_count = 0;
             _connectedClientsTextBox.InvokeEx(cctb => cctb.Text = _client_count.ToString());
 
             try
