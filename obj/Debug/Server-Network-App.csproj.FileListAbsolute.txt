@@ -8,4 +8,3 @@ C:\Server-Network-App\Server-Network-App\obj\Debug\Server-Network-App.csproj.Cor
 C:\Server-Network-App\Server-Network-App\obj\Debug\Server-Network-App.exe
 C:\Server-Network-App\Server-Network-App\obj\Debug\Server-Network-App.pdb
 C:\Server-Network-App\Server-Network-App\obj\Debug\Server_Network_App._winFormServer.resources
-C:\Server-Network-App\Server-Network-App\obj\Debug\Server-Network-App.csproj.SuggestedBindingRedirects.cache
